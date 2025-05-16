@@ -23,6 +23,7 @@ body {
 .content-wrapper {
   flex-grow: 1;
   padding: 2rem 6rem 0;
+  margin-bottom: 2rem;
 }
 
 /* Flow B: narrow layout */
@@ -340,4 +341,10 @@ h1 {
     aspect-ratio: auto;
     margin-bottom: 1rem;
   }
+
+  .content-wrapper {
+    flex-grow: 1;
+    padding: 2rem 2rem 0;
+    margin-bottom: 2rem;
+ }
 }
