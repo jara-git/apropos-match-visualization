@@ -1,0 +1,345 @@
+/* ========================
+   1. Reset and Base Styles
+   ======================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #333;
+  overflow-x: hidden; /* fix unwanted horizontal scroll */
+}
+
+/* ============================
+   2. Layout & Containers
+   ============================ */
+.content-wrapper {
+  flex-grow: 1;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0 1rem; /* top padding now here */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* ========================
+   3. Typography & Texts
+   ======================== */
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* ===========================
+   4. Navbar and User Menu
+   =========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #e5e7eb;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #111;
+  border-radius: 100px;
+}
+
+.user-account {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.save-my-matches, 
+.applicant-profile,
+.dashboard {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-account:hover .user-menu {
+  display: block;
+}
+
+.user-menu a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.user-menu a:hover {
+  background-color: #f3f4f6;
+}
+
+/* =========================
+   5. Cards and Components
+   ========================= */
+.card {
+  border: 1px solid #e5e7eb;
+  padding: 1.2rem;
+  border-radius: 6px;
+  background: #f3f4f6;
+  max-width: 480px;
+  aspect-ratio: 6 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  padding: 0.6rem 0;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.match-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  margin-bottom: 0.5rem;
+}
+
+.role,
+.company {
+  flex: 1 1 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.match-level {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  background: #e0e0e0;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Match bars */
+.match-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.match-percent {
+  width: 3rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.match-type {
+  font-size: 0.8rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.bar-bg {
+  background: #e5e7eb;
+  border-radius: 4px;
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background: #4b5563;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Trait summary */
+.trait-summary {
+  font-size: 0.88rem;
+  color: #374151;
+  margin: 0.8rem 0 1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.info-icon {
+  background: #e5e7eb;
+  color: #1f2937;
+  border-radius: 50%;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
+/* Filters and tags */
+.filters-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #555;
+  margin: 0 auto 1rem;
+  justify-content: center;
+}
+
+.filter-tag {
+  background: #d1d5db;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.cta-buttons button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cta-buttons button:first-child {
+  background: #d1d5db;
+  border-color: #9ca3af;
+  font-weight: 500;
+  color: #111;
+}
+
+.cta-buttons button.favorite {
+  background: #e5e7eb;
+  border-color: #bbb;
+  color: #333;
+}
+
+.cta-buttons button.dismiss {
+  background: #f9fafb;
+  border-color: #ccc;
+  color: #666;
+}
+
+/* Show More Button */
+.show-more {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background: #f3f4f6;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* =================
+   6. Footer Styles
+   ================= */
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.footer a {
+  color: #666;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
+/* ====================
+   7. Media Queries
+   ==================== */
+@media (max-width: 600px) {
+  .grid-container {
+    display: block;
+  }
+
+  .card {
+    max-width: 100%;
+    aspect-ratio: auto;
+    margin-bottom: 1rem;
+  }
+}

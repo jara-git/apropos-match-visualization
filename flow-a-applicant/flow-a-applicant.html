@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow A - Job Seeker</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo"><img src="../assets/images/logo-dark.png" alt="logo" class="logo" /></a>
+            <a href="#" class="nav-item"><img src="../assets/images/home-b.svg" alt="dashboard" class="dashboard" /> Dashboard</a>
+            <a href="#" class="nav-item"><img src="../assets/images/heart.svg" alt="save to favourites" class="save-my-matches" /> My Matches</a>
+            <a href="#" class="nav-item"><img src="../assets/images/resume-icon.svg" alt="applicant profile" class="applicant-profile" />Profile</a>
+        </div>
+        <div class="nav-right">
+            <div class="user-account">
+                <img src="../assets/images/avatar-placeholder.svg" alt="User Avatar" class="avatar" />
+                <div class="user-menu">
+                    <a href="#">Settings</a>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <h1>Matching Companies</h1>
+        <p class="intro">These are your best-fit companies (51% and above)</p>
+
+        <div class="grid-container">
+
+            <!-- Card 1: Excellent Match -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">UX Designer</span>
+                        <span class="company">CreativeSoft</span>
+                        <span class="match-level excellent">Excellent Match</span> 
+
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">84%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 84%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">91%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 91%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Strong alignment with Inspirator & Implementor traits</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Zurich</span>
+                    <span class="filter-tag">100%</span>
+                    <span class="filter-tag">Design</span>
+                </div>
+                <div class="cta-buttons">
+                    <button>Apply</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Dismiss</button>
+                </div>
+            </div>
+
+            <!-- Card 2: Good Match -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Event Manager</span>
+                        <span class="company">SuperEvents AG</span>
+                        <span class="match-level good">Good Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">68%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 68%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">72%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 72%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Aligned with Supporter and Advisor traits</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Zurich</span>
+                    <span class="filter-tag">80-100%</span>
+                    <span class="filter-tag">Services</span>
+                </div>
+                <div class="cta-buttons">
+                    <button>Apply</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Dismiss</button>
+                </div>
+            </div>
+
+            <!-- Card 3: Fair Match -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Operations Specialist</span>
+                        <span class="company">BackOffice Pro</span>
+                        <span class="match-level fair">Fair Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">57%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 57%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">61%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 61%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Moderate fit with Advisor traits</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Basel</span>
+                    <span class="filter-tag">60-80%</span>
+                    <span class="filter-tag">Operations</span>
+                </div>
+                <div class="cta-buttons">
+                    <button>Apply</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Dismiss</button>
+                </div>
+            </div>
+
+            <!-- Card 4: Low Match -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Medical Assistant</span>
+                        <span class="company">HealthCare One</span>
+                        <span class="match-level low">Low Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">49%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 49%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">46%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 46%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Low alignment with Observer profile</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Bern</span>
+                    <span class="filter-tag">50%</span>
+                    <span class="filter-tag">Healthcare</span>
+                </div>
+                <div class="cta-buttons">
+                    <button>Apply</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Dismiss</button>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="show-more">Show all matches (19)</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Apropos · <a href="#">Help</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+</body>
+<script defer src="../assets/script.js"></script>
+
+</html>

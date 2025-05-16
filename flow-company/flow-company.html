@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow- Company View</title>
+    <link rel="stylesheet" href="../assets/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo">A</a>
+            <a href="#" class="nav-item">🏠 Dashboard</a>
+            <a href="#" class="nav-item">❤️ Talent Pool</a>
+        </div>
+        <div class="nav-right">
+            <div class="user-account">
+                <img src="assets/images/avatar-placeholder.png" alt="Company Avatar" class="avatar" />
+                <div class="user-menu">
+                    <a href="#">Settings</a>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <h1>Matching Applicants</h1>
+        <div class="filter-controls">
+            <label for="role-filter">Filter by role:</label>
+            <select id="role-filter">
+                <option>All roles</option>
+                <option>UX Designer</option>
+                <option>Marketing Assistant</option>
+            </select>
+
+            <label><input type="checkbox" /> Show personality match only</label>
+        </div>
+
+        <div class="grid-container">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Henry T.</span>
+                        <span class="company">Marketing Assistant</span>
+                        <span class="match-level">Excellent Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">86%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 86%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">90%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 90%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Strong in Advisor & Implementor traits.</div>
+                <div class="filters-inline"><span class="filter-tag">Zurich</span><span
+                        class="filter-tag">Full-time</span><span class="filter-tag">Marketing</span></div>
+                <div class="cta-buttons">
+                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
+                        Discard</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Louis M.</span>
+                        <span class="company">UX Designer</span>
+                        <span class="match-level">Good Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">74%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 74%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">80%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 80%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Inspirator & Observer combination</div>
+                <div class="filters-inline"><span class="filter-tag">Remote</span><span
+                        class="filter-tag">UX</span><span class="filter-tag">80%</span></div>
+                <div class="cta-buttons">
+                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
+                        Discard</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Anna R.</span>
+                        <span class="company">Project Manager</span>
+                        <span class="match-level">Fair Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">61%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 61%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">66%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 66%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Strong Supporter traits, moderate Implementor</div>
+                <div class="filters-inline"><span class="filter-tag">Basel</span><span
+                        class="filter-tag">Full-time</span><span class="filter-tag">Projects</span></div>
+                <div class="cta-buttons">
+                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
+                        Discard</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Elena D.</span>
+                        <span class="company">Content Editor</span>
+                        <span class="match-level">Good Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">70%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 70%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">74%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 74%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Observer and Implementor synergy</div>
+                <div class="filters-inline"><span class="filter-tag">Lucerne</span><span
+                        class="filter-tag">60%</span><span class="filter-tag">Publishing</span></div>
+                <div class="cta-buttons">
+                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
+                        Discard</button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="match-info-row">
+                        <span class="role">Marco V.</span>
+                        <span class="company">Data Analyst</span>
+                        <span class="match-level">Low Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">49%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 49%;"></div>
+                        </div>
+                        <span class="match-type">Global Match</span>
+                    </div>
+                    <div class="match-bar">
+                        <span class="match-percent">52%</span>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 52%;"></div>
+                        </div>
+                        <span class="match-type">Personality Match</span>
+                    </div>
+                </div>
+                <div class="trait-summary">Mismatch in personality alignment</div>
+                <div class="filters-inline"><span class="filter-tag">Remote</span><span
+                        class="filter-tag">Analytics</span><span class="filter-tag">Full-time</span></div>
+                <div class="cta-buttons">
+                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
+                        Discard</button>
+                </div>
+            </div>
+
+        </div>
+        <button class="show-more">Show all Applicants (42)</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Apropos · <a href="#">Help</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+</body>
+<script defer src="../assets/script.js"></script>
+</html>
