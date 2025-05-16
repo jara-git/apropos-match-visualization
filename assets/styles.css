@@ -33,6 +33,7 @@ body {
   padding: 2rem 1.5rem 0;
 }
 
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -75,6 +76,7 @@ h1 {
   display: flex;
   gap: 1rem;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .nav-item {
@@ -249,6 +251,16 @@ h1 {
   padding: 0.1rem 0.4rem;
   margin-left: 0.3rem;
   cursor: pointer;
+}
+
+.info-icon {
+  background: #e5e7eb;
+  color: #1f2937;
+  border-radius: 50%;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  font-size: 0.75rem;
 }
 
 /* Filters and tags */
