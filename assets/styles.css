@@ -164,6 +164,8 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  max-width:490px;
+  box-sizing: border-box;
 }
 
 .card-header {
@@ -236,6 +238,10 @@ h1 {
 }
 
 /* Trait summary */
+.trait-container {
+  border-radius:16px;
+}
+
 .trait-summary {
   font-size: 0.88rem;
   color: #374151;
@@ -244,14 +250,6 @@ h1 {
   line-height: 1.4;
 }
 
-.info-icon {
-  background: #e5e7eb;
-  color: #1f2937;
-  border-radius: 50%;
-  padding: 0.1rem 0.4rem;
-  margin-left: 0.3rem;
-  cursor: pointer;
-}
 
 .info-icon {
   background: #e5e7eb;
@@ -260,8 +258,27 @@ h1 {
   padding: 0.1rem 0.4rem;
   margin-left: 0.3rem;
   cursor: pointer;
+  display: inline-block;
   font-size: 0.75rem;
+  user-select: none;
 }
+
+.info-content {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  background-color: #f3f4f6;
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.info-content.visible {
+  display: block;
+  border: 1px solid lightgrey;
+}
+
 
 /* Filters and tags */
 .filters-inline {
@@ -270,7 +287,7 @@ h1 {
   gap: 0.4rem;
   font-size: 0.75rem;
   color: #555;
-  margin: 0 auto 1rem;
+  margin: 1rem;
   justify-content: center;
 }
 

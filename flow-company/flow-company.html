@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flow- Company View</title>
-    <link rel="stylesheet" href="../assets/styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Flow - Company View</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -42,16 +42,15 @@
 
         <div class="grid-container">
 
-            <!-- Card 1 -->
+            <!-- CARD 1 -->
             <div class="card">
                 <div class="card-header">
                     <div class="match-info-row">
-                        <div class="role">Helena V.</div>
-                        <div class="company">Textile Engineer</div>
-                        <div class="match-level">Good match</div>
+                        <span class="role">Helena V.</span>
+                        <span class="company">Textile Engineer</span>
+                        <span class="match-level">Good match</span>
                     </div>
                 </div>
-            
                 <div class="match-bar">
                     <span class="match-type">Overall</span>
                     <div class="bar-bg">
@@ -59,7 +58,6 @@
                     </div>
                     <span class="match-percent">76%</span>
                 </div>
-            
                 <div class="match-bar">
                     <span class="match-type">Personality</span>
                     <div class="bar-bg">
@@ -67,27 +65,26 @@
                     </div>
                     <span class="match-percent">81%</span>
                 </div>
-            
                 <p class="trait-summary">
                     This candidate aligns with <strong>Inspirator</strong> and <strong>Advisor</strong> traits.
                     <span class="info-icon"
-                        title="Inspirator: Sociable, optimistic, persuasive. Advisor: Warm-hearted, helpful, team-oriented.">i</span>
+                        data-tooltip="Inspirator: Sociable, optimistic, persuasive. Advisor: Warm-hearted, helpful, team-oriented.">i</span>
                 </p>
-            
+                <div class="info-content">Inspirator: Sociable, optimistic, persuasive.<br>Advisor: Warm-hearted,
+                    helpful, team-oriented.</div>
                 <div class="filters-inline">
                     <span class="filter-tag">German · English</span>
                     <span class="filter-tag">100%</span>
                     <span class="filter-tag">Zurich</span>
                 </div>
-            
                 <div class="cta-buttons">
                     <button>View CV</button>
-                    <button class="favorite">Save</button>
-                    <button class="dismiss">Dismiss</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Dismiss</button>
                 </div>
             </div>
 
-            <!-- Card 2 -->
+            <!-- CARD 2 -->
             <div class="card">
                 <div class="card-header">
                     <div class="match-info-row">
@@ -95,34 +92,41 @@
                         <span class="company">UX Designer</span>
                         <span class="match-level">Good Match</span>
                     </div>
-                    <div class="match-bar">
-                        <span class="match-percent">74%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 74%;"></div>
-                        </div>
-                        <span class="match-type">Global Match</span>
-                    </div>
-                    <div class="match-bar">
-                        <span class="match-percent">80%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 80%;"></div>
-                        </div>
-                        <span class="match-type">Personality Match</span>
-                    </div>
                 </div>
-                <div class="trait-summary">Inspirator & Observer combination
+                <div class="match-bar">
+                    <span class="match-type">Overall</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 74%;"></div>
+                    </div>
+                    <span class="match-percent">74%</span>
+                </div>
+                <div class="match-bar">
+                    <span class="match-type">Personality</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 80%;"></div>
+                    </div>
+                    <span class="match-percent">80%</span>
+                </div>
+                <p class="trait-summary">
+                    Inspirator & Observer combination
                     <span class="info-icon"
-                        title="Inspirator: Sociable, optimistic, persuasive. Advisor: Warm-hearted, helpful, team-oriented.">i</span>
+                        data-tooltip="Inspirator: Sociable, optimistic, persuasive. Observer: Precise, factual, data-driven.">i</span>
+                </p>
+                <div class="info-content">Inspirator: Sociable, optimistic, persuasive.<br>Observer: Precise, factual,
+                    data-driven.</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Remote</span>
+                    <span class="filter-tag">UX</span>
+                    <span class="filter-tag">80%</span>
                 </div>
-                <div class="filters-inline"><span class="filter-tag">Remote</span><span
-                        class="filter-tag">UX</span><span class="filter-tag">80%</span></div>
                 <div class="cta-buttons">
-                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
-                        Discard</button>
+                    <button>View CV</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Discard</button>
                 </div>
             </div>
 
-            <!-- Card 3 -->
+            <!-- CARD 3 -->
             <div class="card">
                 <div class="card-header">
                     <div class="match-info-row">
@@ -130,32 +134,41 @@
                         <span class="company">Project Manager</span>
                         <span class="match-level">Fair Match</span>
                     </div>
-                    <div class="match-bar">
-                        <span class="match-percent">61%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 61%;"></div>
-                        </div>
-                        <span class="match-type">Global Match</span>
-                    </div>
-                    <div class="match-bar">
-                        <span class="match-percent">66%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 66%;"></div>
-                        </div>
-                        <span class="match-type">Personality Match</span>
-                    </div>
                 </div>
-                <div class="trait-summary">Strong Supporter traits, moderate Implementor <span class="info-icon"
-                    title="Inspirator: Sociable, optimistic, persuasive. Advisor: Warm-hearted, helpful, team-oriented.">i</span></div>
-                <div class="filters-inline"><span class="filter-tag">Basel</span><span
-                        class="filter-tag">Full-time</span><span class="filter-tag">Projects</span></div>
+                <div class="match-bar">
+                    <span class="match-type">Overall</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 61%;"></div>
+                    </div>
+                    <span class="match-percent">61%</span>
+                </div>
+                <div class="match-bar">
+                    <span class="match-type">Personality</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 66%;"></div>
+                    </div>
+                    <span class="match-percent">66%</span>
+                </div>
+                <p class="trait-summary">
+                    Strong Supporter traits, moderate Implementor
+                    <span class="info-icon"
+                        data-tooltip="Supporter: Loyal, consistent, harmony-driven. Implementor: Analytical, solution-oriented.">i</span>
+                </p>
+                <div class="info-content">Supporter: Loyal, consistent, harmony-driven.<br>Implementor: Analytical,
+                    solution-oriented.</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Basel</span>
+                    <span class="filter-tag">Full-time</span>
+                    <span class="filter-tag">Projects</span>
+                </div>
                 <div class="cta-buttons">
-                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
-                        Discard</button>
+                    <button>View CV</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Discard</button>
                 </div>
             </div>
 
-            <!-- Card 4 -->
+            <!-- CARD 4 -->
             <div class="card">
                 <div class="card-header">
                     <div class="match-info-row">
@@ -163,32 +176,41 @@
                         <span class="company">Content Editor</span>
                         <span class="match-level">Good Match</span>
                     </div>
-                    <div class="match-bar">
-                        <span class="match-percent">70%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 70%;"></div>
-                        </div>
-                        <span class="match-type">Global Match</span>
-                    </div>
-                    <div class="match-bar">
-                        <span class="match-percent">74%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 74%;"></div>
-                        </div>
-                        <span class="match-type">Personality Match</span>
-                    </div>
                 </div>
-                <div class="trait-summary">Observer and Implementor synergy <span class="info-icon"
-                    title="Inspirator: Sociable, optimistic, persuasive. Advisor: Warm-hearted, helpful, team-oriented.">i</span></div>
-                <div class="filters-inline"><span class="filter-tag">Lucerne</span><span
-                        class="filter-tag">60%</span><span class="filter-tag">Publishing</span></div>
+                <div class="match-bar">
+                    <span class="match-type">Overall</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 70%;"></div>
+                    </div>
+                    <span class="match-percent">70%</span>
+                </div>
+                <div class="match-bar">
+                    <span class="match-type">Personality</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 74%;"></div>
+                    </div>
+                    <span class="match-percent">74%</span>
+                </div>
+                <p class="trait-summary">
+                    Observer and Implementor synergy
+                    <span class="info-icon"
+                        data-tooltip="Observer: Precise, factual, data-driven. Implementor: Analytical, perfectionist.">i</span>
+                </p>
+                <div class="info-content">Observer: Precise, factual, data-driven.<br>Implementor: Analytical,
+                    perfectionist.</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Lucerne</span>
+                    <span class="filter-tag">60%</span>
+                    <span class="filter-tag">Publishing</span>
+                </div>
                 <div class="cta-buttons">
-                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
-                        Discard</button>
+                    <button>View CV</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Discard</button>
                 </div>
             </div>
 
-            <!-- Card 5 -->
+            <!-- CARD 5 -->
             <div class="card">
                 <div class="card-header">
                     <div class="match-info-row">
@@ -196,38 +218,49 @@
                         <span class="company">Data Analyst</span>
                         <span class="match-level">Low Match</span>
                     </div>
-                    <div class="match-bar">
-                        <span class="match-percent">49%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 49%;"></div>
-                        </div>
-                        <span class="match-type">Global Match</span>
-                    </div>
-                    <div class="match-bar">
-                        <span class="match-percent">52%</span>
-                        <div class="bar-bg">
-                            <div class="bar-fill" style="width: 52%;"></div>
-                        </div>
-                        <span class="match-type">Personality Match</span>
-                    </div>
                 </div>
-                <div class="trait-summary">Mismatch in personality alignment<span class="info-icon"
-                    title="Inspirator: Sociable, optimistic, persuasive. Advisor: Warm-hearted, helpful, team-oriented.">i</span></div>
-                <div class="filters-inline"><span class="filter-tag">Remote</span><span
-                        class="filter-tag">Analytics</span><span class="filter-tag">Full-time</span></div>
+                <div class="match-bar">
+                    <span class="match-type">Overall</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 49%;"></div>
+                    </div>
+                    <span class="match-percent">49%</span>
+                </div>
+                <div class="match-bar">
+                    <span class="match-type">Personality</span>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width: 52%;"></div>
+                    </div>
+                    <span class="match-percent">52%</span>
+                </div>
+                <p class="trait-summary">
+                    Mismatch in personality alignment
+                    <span class="info-icon"
+                        data-tooltip="Observer: Precise, factual, data-driven. Implementor: Analytical, perfectionist.">i</span>
+                </p>
+                <div class="info-content">Observer: Precise, factual, data-driven.<br>Implementor: Analytical,
+                    perfectionist.</div>
+                <div class="filters-inline">
+                    <span class="filter-tag">Remote</span>
+                    <span class="filter-tag">Analytics</span>
+                    <span class="filter-tag">Full-time</span>
+                </div>
                 <div class="cta-buttons">
-                    <button>View CV</button><button class="favorite">❤ Save</button><button class="dismiss">✖
-                        Discard</button>
+                    <button>View CV</button>
+                    <button class="favorite">❤ Save</button>
+                    <button class="dismiss">✖ Discard</button>
                 </div>
             </div>
-
         </div>
+
         <button class="show-more">Show all Applicants (42)</button>
     </div>
 
     <footer class="footer">
         <p>&copy; Apropos · <a href="#">Help</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
+
+    <script defer src="../assets/script.js"></script>
 </body>
-<script defer src="../assets/script.js"></script>
+
 </html>

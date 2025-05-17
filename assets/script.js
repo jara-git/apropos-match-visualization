@@ -1,7 +1,7 @@
 // script.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Filter cards by role in company flow
+    // Role filter (Company Flow)
     const roleFilter = document.getElementById('role-filter');
     if (roleFilter) {
         roleFilter.addEventListener('change', () => {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Show personality match only toggle (checkbox)
+    // Toggle visibility for "personality match only"
     const personalityToggle = document.querySelector('input[type="checkbox"]');
     if (personalityToggle) {
         personalityToggle.addEventListener('change', () => {
@@ -28,12 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
             cards.forEach(card => {
                 const bars = card.querySelectorAll('.match-bar');
                 if (personalityToggle.checked) {
-                    // Hide all bars except personality match (assumed second .match-bar)
+                    // Only show personality bar (assumed to be second)
                     bars.forEach((bar, idx) => {
                         bar.style.display = idx === 1 ? '' : 'none';
                     });
                 } else {
-                    // Show all bars
                     bars.forEach(bar => {
                         bar.style.display = '';
                     });
@@ -42,7 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Show all applicants / matches button
+    // Expand/hide info tooltip on click
+    const infoIcons = document.querySelectorAll('.info-icon');
+    infoIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            const summary = icon.closest('.trait-summary');
+            const info = summary?.nextElementSibling;
+            if (info && info.classList.contains('info-content')) {
+                info.classList.toggle('visible');
+            }
+        });
+    });
+
+    // Show more (matches or applicants)
     const showMoreBtn = document.querySelector('.show-more');
     if (showMoreBtn) {
         showMoreBtn.addEventListener('click', () => {
