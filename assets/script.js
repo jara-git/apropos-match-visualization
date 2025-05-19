@@ -60,4 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Show more functionality is not implemented in this prototype.');
         });
     }
+    // Toggle note textarea
+    document.querySelectorAll('.toggle-note').forEach(button => {
+        button.addEventListener('click', () => {
+            const textarea = button.nextElementSibling;
+            textarea.style.display = textarea.style.display === 'block' ? 'none' : 'block';
+        });
+    });
 });

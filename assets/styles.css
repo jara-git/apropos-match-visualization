@@ -346,6 +346,45 @@ h1 {
   cursor: pointer;
 }
 
+/* Note-Section */
+.note-section {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  padding: .5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.toggle-note {
+  background: none;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  padding: 0;
+  text-align: left;
+  min-width: 80px;
+}
+
+.note-area {
+  display: none;
+  width: 100%;
+  min-height: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.note-block.active .note-area {
+  display: block;
+}
+
 /* =================
    6. Footer Styles
    ================= */
